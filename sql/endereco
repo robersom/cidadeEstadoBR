@@ -1,0 +1,16 @@
+-- Tabela de endereços
+
+CREATE TABLE endereco (
+    id SERIAL PRIMARY KEY,
+    logradouro VARCHAR(255) NOT NULL,
+    numero VARCHAR(20) NOT NULL,
+    complemento VARCHAR(100),
+    bairro VARCHAR(100),
+    cidade_id INT NOT NULL,
+    estado_id INT NOT NULL,
+    cep VARCHAR(20) NOT NULL,
+    pais VARCHAR(100) NOT NULL DEFAULT 'Brasil',
+    referencia VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
