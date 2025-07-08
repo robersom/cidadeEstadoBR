@@ -1,0 +1,15 @@
+-- Create Table --
+
+CREATE TABLE "regiao" (
+  "id" serial NOT NULL,
+  PRIMARY KEY ("id"),
+  "nome" character varying(50) NOT NULL
+);
+
+-- Insert Data --
+
+Insert into "regiao" (id, Nome) values (1, 'Norte');
+Insert into "regiao" (id, Nome) values (2, 'Nordeste');
+Insert into "regiao" (id, Nome) values (3, 'Sudeste');
+Insert into "regiao" (id, Nome) values (4, 'Sul');
+Insert into "regiao" (id, Nome) values (5, 'Centro-Oeste');
